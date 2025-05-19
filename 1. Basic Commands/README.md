@@ -1,4 +1,4 @@
-# Week 1: Basic commands
+# Module 01: Basic commands
 
 ## Required command
 

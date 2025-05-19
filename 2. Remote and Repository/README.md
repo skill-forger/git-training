@@ -1,4 +1,4 @@
-# Week 2: Remote and repository
+# Module 02: Remote and repository
 
 ## Table of Contents
 <ol>
@@ -11,7 +11,7 @@
 </ol>
 
 ## Objectives
-The objective is learn how to initialize and manage a Git repository. 
+The objective is to learn how to initialize and manage a Git repository. 
 It aims to help developers understand the fundamentals of creating a repository, 
 linking it to a remote service (such as GitHub, GitLab, or Bitbucket).
 

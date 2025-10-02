@@ -3,6 +3,7 @@
 ## Table of Contents
 
 <ol>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Objectives</a></li>
     <li><a href="#branching-in-git">Branching in Git</a></li>
     <li><a href="#common-commands">Common Commands</a></li>
@@ -23,9 +24,20 @@ and unique tool and can entirely change the way that you develop
 
 ## Objectives
 
-- Understand the concept of branching in Git
-- Practice common commands in Git branching
-- Utilize branching feature in Git for development
+- Understand Git branching concepts, including how branches represent independent lines of development and how history is tracked via commit references.
+- Visualize and reason about parallel development and how branching keeps `main` stable.
+- List and inspect branches, including local and remote branches (`git branch`, `git branch -a`).
+- Create, switch, and rename branches (`git branch <name>`, `git checkout -b <name>`, `git checkout <name>`, `git branch -m <new_name>`).
+- Safely and forcefully delete branches (`git branch -d <name>`, `git branch -D <name>`).
+- Synchronize branch information from remotes (`git fetch --all`).
+- Merge branches and interpret outcomes, including merge commits and their parent relationships.
+- Differentiate and apply fast-forward vs. 3-way merges, and understand when each occurs.
+- Use `git status` to identify and manage merge states.
+- Detect, inspect, and resolve merge conflicts in files.
+- Leverage `git rebase` to facilitate fast-forward merges in appropriate workflows.
+- Summarize and communicate branching workflows effectively (presentation exercise).
+
+Summary: Created a concise, structured objectives list derived from `git-training/03. Branching/README.md`.
 
 ## Branching in Git
 

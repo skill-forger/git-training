@@ -3,6 +3,7 @@
 ## Table of Contents
 
 <ol>
+<li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Objective</a></li>
     <li><a href="#what-is-a-repository">What is a repository</a></li>
     <li><a href="#what-is-remote">What is remote</a></li>
@@ -10,6 +11,13 @@
     <li><a href="#cloning-an-existing-repository">Cloning an existing repository</a></li>
     <li><a href="#setup-new-repository">Setup new repository</a></li>
 </ol>
+
+## Overview
+
+This module explains the fundamentals of Git repositories and remotes—what they are, how they differ (local vs. remote),
+and how they enable collaboration. Learners will generate and add SSH keys for secure access, clone an existing
+repository, and initialize a new repository before linking it to a remote on a platform like GitHub. By the end, they
+will understand the core workflow for creating, connecting, and collaborating with Git.
 
 ## Objectives
 

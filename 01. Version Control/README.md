@@ -22,14 +22,14 @@ and **Pull Requests (PRs)** to ensure safe and effective team code integration.
 
 ## Objectives
 
-* Understand of the purpose and mechanics of * *Version Control Systems (VCS)** and the distributed nature of **Git**.
-* Able to define and correctly utilize key Git concepts, including **Repository**, **File States**, and the function of
+- Understand of the purpose and mechanics of * *Version Control Systems (VCS)** and the distributed nature of **Git**.
+- Able to define and correctly utilize key Git concepts, including **Repository**, **File States**, and the function of
   a **Commit**.
-* Perform the most common daily Git operations, such as cloning, status checking, adding, committing, pushing, and
+- Perform the most common daily Git operations, such as cloning, status checking, adding, committing, pushing, and
   pulling.
-* Create and switch between **merging** branches to manage isolated lines of development.
-* **Engage in Collaborative Workflow:** Participants will understand the professional methodology of using **Pull
-  Requests (PRs)** to submit code for review and integrate changes into a shared codebase.
+- Create and switch between **merging** branches to manage isolated lines of development.
+- Comprehend the professional methodology of using **Pull Requests (PRs)** to submit code for review and integrate
+  changes into a shared codebase.
 
 ## Version Control
 

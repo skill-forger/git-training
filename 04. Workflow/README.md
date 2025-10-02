@@ -3,6 +3,7 @@
 ## Table of Contents
 
 <ol>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Objectives</a></li>
     <li><a href="#feature-branch-workflow">Feature Branch Workflow</a></li>
     <li><a href="#gitflow-workflow">Gitflow Workflow</a></li>
@@ -19,9 +20,18 @@ Several established Git workflows can help teams work effectively.
 
 ## Objectives
 
-- Understand the description and basic usage for each Git workflow
-- Compare the differences between one workflow and another
-- Practice Gitflow and Forking workflow
+- Understand the purpose and trade-offs of common Git workflows: Feature Branch, Gitflow, and Forking.
+- Execute the Feature Branch Workflow: branch from `main`, commit locally, push to remote, open PRs, resolve feedback,
+  and merge.
+- Apply code review best practices using Pull Requests as a collaboration and discussion tool.
+- Implement Gitflow: use `main` and `develop`, manage feature branches, create and finish release branches, and handle
+  hotfixes.
+- Tag releases on `main` and maintain synchronization between `main` and `develop`.
+- Perform Forking Workflow: fork a repo, clone locally, configure `origin` and `upstream`, push to personal fork, and
+  open a PR to the official repo.
+- Configure and manage multiple remotes (`origin` for fork, `upstream` for official) and keep branches up to date.
+- Select an appropriate workflow for a team based on release cadence, collaboration model, and risk.
+- Practice end-to-end workflow execution and present the chosen workflow and rationale.
 
 ## Feature Branch Workflow
 

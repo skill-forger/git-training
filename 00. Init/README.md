@@ -3,6 +3,7 @@
 ## Installation
 
 ### 1. MacOS
+
 - Install Git with Homebrew
   If you have installed Homebrew to manage packages on OS X, you can follow these instructions to install Git:
 
@@ -16,6 +17,7 @@
     ```
 
 ### 2. Windows
+
 1. Download the latest [Git for Windows installer](https://git-scm.com/downloads/win).
 2. Run the .exe file and follow the setup instructions.
 3. Verify the installation was successful:
@@ -24,6 +26,7 @@
     ```
 
 ### 3. Linux
+
 1. Use your package manager to install Git. For example, on Ubuntu:
     ```bash
     $ sudo apt-get update
@@ -33,7 +36,9 @@
     ```bash
     $ git --version
     ```
+
 ## User Configuration
+
 - Configure for each repository
    ```bash
    $ git config user.email "your email"

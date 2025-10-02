@@ -1,36 +1,52 @@
-# Week 2: Remote and repository
+# Module 02: Remote and repository
 
 ## Table of Contents
+
 <ol>
+<li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Objective</a></li>
-    <li><a href="#what-is-a-repository">What is a repository?</a></li>
+    <li><a href="#what-is-a-repository">What is a repository</a></li>
     <li><a href="#what-is-remote">What is remote</a></li>
     <li><a href="#setup-ssh-key">Setup ssh key</a></li>
     <li><a href="#cloning-an-existing-repository">Cloning an existing repository</a></li>
     <li><a href="#setup-new-repository">Setup new repository</a></li>
 </ol>
 
+## Overview
+
+This module explains the fundamentals of Git repositories and remotes—what they are, how they differ (local vs. remote),
+and how they enable collaboration. Learners will generate and add SSH keys for secure access, clone an existing
+repository, and initialize a new repository before linking it to a remote on a platform like GitHub. By the end, they
+will understand the core workflow for creating, connecting, and collaborating with Git.
+
 ## Objectives
-The objective is learn how to initialize and manage a Git repository. 
-It aims to help developers understand the fundamentals of creating a repository, 
+
+The objective is to learn how to initialize and manage a Git repository.
+It aims to help developers understand the fundamentals of creating a repository,
 linking it to a remote service (such as GitHub, GitLab, or Bitbucket).
 
-## What is a repository?
-A Git repository (repo) is a directory that contains the entire history of changes for a project. 
+## What is a repository
+
+A Git repository (repo) is a directory that contains the entire history of changes for a project.
 It includes all files, directories, and commit history.
 
 **Types of repositories in Git:**
 
-- Local Repository: A repo stored on your personal computer, where you make changes before pushing them to a remote repository.
+- Local Repository: A repo stored on your personal computer, where you make changes before pushing them to a remote
+  repository.
 
-- Remote Repository: A repo hosted on a remote server (e.g., GitHub, GitLab, Bitbucket), where the official version of the project is stored.
+- Remote Repository: A repo hosted on a remote server (e.g., GitHub, GitLab, Bitbucket), where the official version of
+  the project is stored.
 
-## What is remote?
-A remote repository is a version of your repository hosted on a remote server. 
+## What is remote
+
+A remote repository is a version of your repository hosted on a remote server.
 It allows team members to collaborate on the same project by sharing source code.
 
 ## Setup ssh key
+
 ### 1. Generate an SSH Key on Mac and Linux
+
 1. execute the following to begin the key creation
     ```bash
     $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -50,15 +66,19 @@ It allows team members to collaborate on the same project by sharing source code
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 ## Cloning an existing repository
+
 ```bash
 git clone git@github.com:skill-forger/git-training.git
 ```
+
 Structure
+
 - HOSTNAME: github.com
 - Owner User: skill-forger
 - Repo name: git-training
 
 ## Setup new repository
+
 1. Create a new git repository
     ```bash
     git init

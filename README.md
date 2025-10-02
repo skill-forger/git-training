@@ -12,11 +12,11 @@ This course covers repository management, branching, merging, and collaboration 
 
 ## Contents
 
-- [0. Init](./0.%20Init)
-- [1. Basic Commands](./1.%20Basic%20Commands)
-- [2. Remote and Repository](./2.%20Remote%20and%20Repository)
-- [3. Branching](./3.%20Branching)
-- [4. Workflow](./4.%20Workflow)
+- [00. Init](./00.%20Init)
+- [01. Basic Commands](./01. Version Control)
+- [02. Remote and Repository](./02.%20Remote%20and%20Repository)
+- [03. Branching](./03.%20Branching)
+- [04. Workflow](./04.%20Workflow)
 - [5. Assignment](./5.%20Assignment)
 
 ## How to learn

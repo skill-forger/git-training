@@ -1,4 +1,4 @@
-# Week 3: Branching
+# Module 03: Branching
 
 ## Table of Contents
 

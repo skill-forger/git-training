@@ -1,4 +1,4 @@
-# Week 4: Workflow
+# Module 04: Workflow
 
 ## Table of Contents
 

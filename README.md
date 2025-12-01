@@ -12,16 +12,16 @@ This course covers repository management, branching, merging, and collaboration 
 
 ## Contents
 
-- [00. Init](./00.%20Init)
-- [01. Basic Commands](./01. Version Control)
-- [02. Remote and Repository](./02.%20Remote%20and%20Repository)
-- [03. Branching](./03.%20Branching)
-- [04. Workflow](./04.%20Workflow)
-- [5. Assignment](./5.%20Assignment)
+- [00. Init](00.%20Init)
+- [01. Version Control](01.%20Version%20Control)
+- [02. Remote and Repository](02.%20Remote%20and%20Repository)
+- [03. Branching](03.%20Branching)
+- [04. Workflow](04.%20Workflow)
+- [05. Exercises](05.%20Exercises)
 
 ## How to learn
 
-- Start with the topic `0. Init` to install necessary tools
+- Start with the topic `00. Init` to install necessary tools
 - Read the document in `REAMDE.md` file to learn and understand the knowledge
 - Practice the using language with exercises and examples
 - Refer to Reference Resources section for extra reading

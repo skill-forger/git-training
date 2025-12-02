@@ -11,6 +11,34 @@ Before starting this exercise, ensure you have:
 - **Two active GitHub accounts**
     - One acts as the repository owner
     - The other acts as the collaborator who receives the invitation
+- **Common error (first-time commit)**
+    - On your first commit, you may see an error message like: `"*** Please tell me who you are."`
+    - This happens because Git does not yet know your name and email.
+    - ![ex1_prerequisite_1.png](images/ex1_prerequisite_1.png)
+    - Configure them once globally with:
+      ```bash
+      git config --global user.name "Your Name"
+      git config --global user.email "you@example.com"
+      ```
+    - Or configure local for current repository with:
+      ```bash
+      git config user.name "Your Name"
+      git config user.email "you@example.com"
+      ```
+
+- **Verify setup**
+    - Verify your Git configuration:
+      ```bash
+      git config --list
+      ```
+      Or check specific values:
+      ```bash
+      git config user.name
+      git config user.email
+      ```
+    - ![ex1_prerequisite_2.png](images/ex1_prerequisite_2.png)
+
+- For more details about these commands, see the [00. Init](../00.%20Init/README.md) or [01. Version Control](../01.%20Version%20Control/README.md) module.
 
 ## Use Cases
 - Onboarding new developers

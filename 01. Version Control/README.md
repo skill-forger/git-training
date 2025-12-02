@@ -81,7 +81,7 @@ Git tracks files in three main states, forming your basic workflow:
 2. **Staged (tracked)** A temporary area where you place the changes you want to include in the *next* commit. You
    can stage individual files or specific changes within a file.
 3. **Committed:** Where Git permanently stores the version history as **commits**.
-   4**Pushed:** When a commit is pushed into a remote repository, usually via pull/merge request.
+4. **Pushed:** When a commit is pushed into a remote repository, usually via pull/merge request.
 
 ### Commit
 

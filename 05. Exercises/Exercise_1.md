@@ -54,6 +54,25 @@ git add exercise_1.txt
 git commit -m "feat: add exercise_1.txt file"
 ```
 - Push the changes
+```
+git push --set-upstream origin feat/exercise-1
+```
+
+**Notes**
+
+When pushing a new branch for the first time, Git does not know which remote branch it should connect to. Use this command to
+- Pushes the branch to GitHub
+- Links your local branch to the remote branch (--set-upstream)
+```
+git push --set-upstream origin <branch-name>
+```
+
+After this, you can simply use this command without specifying remote or branch name 
+```
+git push
+git pull
+```
+
 ![ex1_creating_pr_1.png](images/ex1_creating_pr_1.png)
 - Fill out PR title and description
 - Review your branch, target branch, and code changes before opening PR

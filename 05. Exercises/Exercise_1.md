@@ -11,6 +11,7 @@ Before starting this exercise, ensure you have:
 - **Two active GitHub accounts**
     - One acts as the repository owner
     - The other acts as the collaborator who receives the invitation
+    - If you don't have someone to practice with, open an incognito/private window and log in with your second GitHub account so you can practice comments by yourself.
 - **Common error (first-time commit)**
     - On your first commit, you may encounter an error message like: `"*** Please tell me who you are."`
     - This occurs because Git does not yet know your name and email address.

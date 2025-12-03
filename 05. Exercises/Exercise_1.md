@@ -11,6 +11,11 @@ Before starting this exercise, ensure you have:
 - **Two active GitHub accounts**
     - One acts as the repository owner
     - The other acts as the collaborator who receives the invitation
+- **Common error (first-time commit)**
+    - On your first commit, you may encounter an error message like: `"*** Please tell me who you are."`
+    - This occurs because Git does not yet know your name and email address.
+    - ![ex1_unknown_user_error.png](images/ex1_unknown_user_error.png)
+    - You can resolve this by configuring Git globally (see [00. Init](../00.%20Init/README.md)) or locally (see [01. Version Control](../01.%20Version%20Control/README.md))
 
 ## Use Cases
 - Onboarding new developers

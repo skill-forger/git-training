@@ -50,8 +50,13 @@
    $ git config --global user.name "your name"  
    ```
 - Verify configuration
-   ```bash
-   $ git config user.email
-   $ git config user.name
-   ```
-
+    - Verify your Git configuration:
+       ```bash
+       git config --list
+       ```
+      Or check specific values:
+       ```bash
+       git config user.name
+       git config user.email
+       ```
+    - Your terminal output should look similar to this: ![verify_config.png](images/verify_config.png)

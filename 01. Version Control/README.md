@@ -116,8 +116,6 @@ These commands represent your most common daily Git workflow:
 |:---------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------|
 | `git init`                                         | Downloads a remote repository to your local machine.                                                        | Initial Setup  |
 | `git clone <url>`                                  | Create empty Git repo in specified directory and initialize the current directory as a git repository.      | Initial Setup  |
-| `git config --global user.name "Your Name"`        | Sets your global Git user name, required for commit identification.                                         | Initial Setup  |
-| `git config --global user.email "you@example.com"` | Sets your global Git user email, required for commit identification.                                        | Initial Setup  |
 | `git config user.name "Your Local Name" `          | Sets the user name for the current repository only (local config).                                          | Initial Setup  |
 | `git config user.email "local@example.com"`        | Sets the user email for the current repository only (local config).                                         | Initial Setup  |
 | `git status`                                       | Shows which files are modified, staged, or untracked.                                                       | Daily Check    |

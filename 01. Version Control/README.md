@@ -112,18 +112,21 @@ time.
 
 These commands represent your most common daily Git workflow:
 
-| Command                         | Purpose                                                                                                     | Workflow Stage |
-|:--------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------|
-| `git init`                      | Downloads a remote repository to your local machine.                                                        | Initial Setup  |
-| `git clone <url>`               | Create empty Git repo in specified directory and initialize the current directory as a git repository.      | Initial Setup  |
-| `git status`                    | Shows which files are modified, staged, or untracked.                                                       | Daily Check    |
-| `git add <file>` or `git add .` | Moves modified files to the **Staging Area**.                                                               | Staging        |
-| `git commit -m "message"`       | Records the staged changes as a permanent **commit** in your local repo.                                    | Committing     |
-| `git push`                      | Uploads your local commits to the **Remote Repository** (e.g., GitHub).                                     | Sharing        |
-| `git pull`                      | Downloads the latest changes from the remote repo and automatically **merges** them into your local branch. | Syncing        |
-| `git log`                       | Displays the history of commits for the current branch.                                                     | Inspecting     |
-| `git checkout -b <new-branch>`  | Creates a new branch and immediately switches to it.                                                        | Branching      |
-| `git checkout`                  | Switches branches or restore files.                                                                         | Branching      |
+| Command                                            | Purpose                                                                                                     | Workflow Stage |
+|:---------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------|
+| `git init`                                         | Downloads a remote repository to your local machine.                                                        | Initial Setup  |
+| `git clone <url>`                                  | Create empty Git repo in specified directory and initialize the current directory as a git repository.      | Initial Setup  |
+| `git config user.name "Your Local Name" `          | Sets the user name for the current repository only (local config).                                          | Initial Setup  |
+| `git config user.email "local@example.com"`        | Sets the user email for the current repository only (local config).                                         | Initial Setup  |
+| `git status`                                       | Shows which files are modified, staged, or untracked.                                                       | Daily Check    |
+| `git add <file>` or `git add .`                    | Moves modified files to the **Staging Area**.                                                               | Staging        |
+| `git commit -m "message"`                          | Records the staged changes as a permanent **commit** in your local repo.                                    | Committing     |
+| `git push`                                         | Uploads your local commits to the **Remote Repository** (e.g., GitHub).                                     | Sharing        |
+| `git pull`                                         | Downloads the latest changes from the remote repo and automatically **merges** them into your local branch. | Syncing        |
+| `git log`                                          | Displays the history of commits for the current branch.                                                     | Inspecting     |
+| `git config --list`                                | Lists all Git configurations (local, global, system) currently set and active.                              | Inspecting     |
+| `git checkout -b <new-branch>`                     | Creates a new branch and immediately switches to it.                                                        | Branching      |
+| `git checkout`                                     | Switches branches or restore files.                                                                         | Branching      |
 
 ***
 

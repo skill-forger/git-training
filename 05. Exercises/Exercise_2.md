@@ -39,6 +39,7 @@ git commit -m "chore: update file based on PR review comments"
 git push
 ```
 - A new commit will be added and your changes will appear in the existing PR
+
 ![ex2_update_pr_2.png](images/ex2_update_pr_2.png)
 ![ex2_update_pr_1.png](images/ex2_update_pr_1.png)
 
@@ -133,6 +134,7 @@ Areas to modify:
 ```
 
 - Click `Commit merge` then it will add a merge commit in your branch, your PR will be updated and able to be merged
+
 ![ex2_conflict_2.png](images/ex2_conflict_2.png)
 ![ex2_conflict_3.png](images/ex2_conflict_3.png)
 ![ex2_conflict_4.png](images/ex2_conflict_4.png)
@@ -160,6 +162,7 @@ git rebase origin/main
 ```
 
 - Git will detect conflicts and pause the rebase
+
 ![ex2_rebase_local.png](images/ex2_rebase_local.png)
 
 - Open the conflicting file and resolve the conflict markers

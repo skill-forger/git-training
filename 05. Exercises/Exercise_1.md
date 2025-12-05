@@ -28,10 +28,12 @@ Before starting this exercise, ensure you have:
 
 **Steps:**
 - Open `Settings` → `Collaborators & teams` in your repository
+
 ![ex1_add_collaborator.png](images/ex1_add_collaborator.png)
 - Click `Add people`
 - Invite teammates with their GitHub username or email
 - Teammate will receive an invitation email to join the repository
+
 ![ex1_invitation_email.png](images/ex1_invitation_email.png)
 
 ### 2. Create a Pull Request
@@ -82,6 +84,7 @@ git pull
 ![ex1_creating_pr_1.png](images/ex1_creating_pr_1.png)
 - Fill out PR title and description
 - Review your branch, target branch, and code changes before opening PR
+
 ![ex1_creating_pr_2.png](images/ex1_creating_pr_2.png)
 ![ex1_creating_pr_3.png](images/ex1_creating_pr_3.png)
 - Ask your team members to review the PR
@@ -102,6 +105,7 @@ Contributors
 **Note** 
 - `Add single comment` → add a comment immediately and notify the author
 - `Start a review` → allow you to add multiple comments and submit them together with action (Comment/Approve/Request changes)
+
 ![ex1_review_pr_2.png](images/ex1_review_pr_2.png)
 
 ## Expected Output

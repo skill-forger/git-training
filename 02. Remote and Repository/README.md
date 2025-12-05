@@ -3,7 +3,7 @@
 ## Table of Contents
 
 <ol>
-<li><a href="#overview">Overview</a></li>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Objective</a></li>
     <li><a href="#what-is-a-repository">What is a repository</a></li>
     <li><a href="#what-is-remote">What is remote</a></li>
@@ -87,7 +87,7 @@ The three most popular are:
    A read-only reference in your local `.git` folder that represents the state of the remote branch the last time you
    connected. You cannot edit this branch directly. It only moves when you run git fetch or git pull
 
-## Setup ssh key
+## Setup SSH key
 
 ### 1. Generate an SSH Key on Mac and Linux
 
@@ -111,6 +111,47 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a
 
 ## Cloning an existing repository
 
+### 1. HTTPS
+HTTPS is widely used for cloning repositories due to its ease of setup and compatibility across networks. It’s a great option for users who prefer a simple configuration process.
+
+**How it works**
+- Git communicates over the HTTPS protocol (same as websites).
+- You authenticate using a GitHub Personal Access Token (PAT) when pushing.
+- No SSH keys required.
+
+**Pros**
+- Works in most case (firewalls rarely block HTTPS)
+- Easiest option for beginners
+- No SSH key setup needed
+- Good for read-only access or quick clones
+
+**Cons**
+- Push operations require entering a PAT (Personal Access Token) unless cached
+- Managing multiple accounts is harder than with SSH
+- Less convenient for frequent use
+- Tokens must be stored securely
+
+### 2. SSH
+SSH is a secure protocol used for authenticating and encrypting communication between your machine and the server. It offers more security and convenience for frequent Git users.
+
+**How it works**
+- Git uses SSH (Secure Shell) to authenticate.
+- Authentication is done with your SSH keypair (private + public key).
+- No passwords or tokens required during pushes.
+
+**Pros**
+- No need to enter password/token each push
+- Secure authentication
+- Easy to manage multiple GitHub accounts via ~/.ssh/config
+- Good for automation (scripts, CI/CD)
+
+**Cons**
+- Requires SSH key setup
+- Some corporate networks block SSH (port 22)
+- Can be confused for beginners
+- Must manage keys properly
+
+**Clone using SSH**
 ```bash
 git clone git@github.com:skill-forger/git-training.git
 ```

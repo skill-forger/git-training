@@ -26,7 +26,7 @@ git checkout feat/exercise-1
 ```
 
 - Apply the requested changes (example: add a Contributors section)
-
+aaa
 ```
 Contributors:
 - <your_name_here>

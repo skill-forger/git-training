@@ -3,7 +3,7 @@
 ## Table of Contents
 
 <ol>
-<li><a href="#overview">Overview</a></li>
+    <li><a href="#overview">Overview</a></li>
     <li><a href="#objectives">Objective</a></li>
     <li><a href="#what-is-a-repository">What is a repository</a></li>
     <li><a href="#what-is-remote">What is remote</a></li>
@@ -87,7 +87,7 @@ The three most popular are:
    A read-only reference in your local `.git` folder that represents the state of the remote branch the last time you
    connected. You cannot edit this branch directly. It only moves when you run git fetch or git pull
 
-## Setup ssh key
+## Setup SSH key
 
 ### 1. Generate an SSH Key on Mac and Linux
 
@@ -111,6 +111,59 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a
 
 ## Cloning an existing repository
 
+### 1. Using HTTPS
+
+HTTPS (HyperText Transfer Protocol Secure) is the secure version of HTTP.
+It encrypts communication between your computer and a server using TLS/SSL (Transport Layer Security/ Secure Sockets Layer), ensuring data cannot be read or modified during transfer.
+
+**How it works**
+- Git communicates over the HTTPS protocol
+- You authenticate using a GitHub Personal Access Token (PAT) when pushing
+- No SSH keys required
+
+| Pros                                      | Cons                                                                         |
+|-------------------------------------------|------------------------------------------------------------------------------|
+| Works in most cases                       | Push operations require entering a Personal Access Token (PAT) unless cached |
+| Good option for beginners                 | Managing multiple accounts is harder than with SSH                           |
+| No SSH key setup needed                   | Less convenient for frequent use                                             |
+| Good for read-only access or quick clones | Tokens must be stored securely                                               |
+
+### 2. Using SSH
+SSH (Secure Shell) is a cryptographic network protocol used to securely access and manage remote systems. SSH ensures confidentiality and integrity through strong cryptography.
+
+**How it works**
+- Git uses SSH (Secure Shell) to authenticate
+- Authentication is done with your SSH keypair (private + public key)
+    - Public and private keys are a pair in asymmetric cryptography
+    - Public key encrypts data or verifies signatures and is shared openly, while the private key decrypts data or creates signatures and must remain secret, used by its owner to unlock what the public key locks, enabling secure communication and digital transactions like those in crypto or secure websites (SSL/TLS)
+- Generate a key pair: [Setup SSH key](#setup-ssh-key)
+    - Private key (stored on your machine)
+    - Public key (uploaded to GitHub)
+- When you connect, GitHub verifies that you have the correct private key
+- It matches the public key stored in your GitHub account
+- No passwords or tokens required during pushes
+
+
+| Pros                                                        | Cons                                        |
+|-------------------------------------------------------------|---------------------------------------------|
+| No need to enter password/token each push                   | Requires SSH key setup                      |
+| Secure authentication                                       | Some corporate networks block SSH (port 22) |
+| Easy to manage multiple GitHub accounts via `~/.ssh/config` | Can be confusing for beginners              |
+| Good for automation (scripts, CI/CD)                        | Must manage keys properly                   |
+
+### 3. Using HTTPS vs SSH — Use Case Comparison
+
+| Use Case                 | HTTPS                      | SSH                         |
+|--------------------------|----------------------------|-----------------------------|
+| Beginner-friendly        | Yes                        | Requires more setup         |
+| Works behind firewalls   | Yes (port 443)             | Sometimes blocked (port 22) |
+| Daily development        | Not too inconvenient       | Better choice               |
+| Multi-account management | Harder with tokens         | Easy via `~/.ssh/config`    |
+| Security                 | High                       | Very high                   |
+| Quick clone / read-only  | Yes                        | Yes                         |
+
+
+### 4. Clone repository using SSH
 ```bash
 git clone git@github.com:skill-forger/git-training.git
 ```

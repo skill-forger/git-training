@@ -69,8 +69,8 @@ git push --set-upstream origin feat/exercise-1
 **Notes**
 
 When pushing a new branch for the first time, Git does not know which remote branch it should connect to. Use this command to
-- Pushes the branch to GitHub
-- Links your local branch to the remote branch (--set-upstream)
+- Push the branch to GitHub
+- Link your local branch to the remote branch (--set-upstream)
 ```
 git push --set-upstream origin <branch-name>
 ```
@@ -89,6 +89,24 @@ git pull
 ![ex1_creating_pr_3.png](images/ex1_creating_pr_3.png)
 - Ask your team members to review the PR
 
+**Optional**: Creating a Draft PR
+
+**When to use**
+
+- Feature is still Work In Progress (WIP)
+- You need early feedback on direction or structure
+- You want to share code but not allow merging yet
+
+**How to create a Draft PR**
+
+- When opening the Pull Request, click the dropdown on the Create pull request button and select `Create draft pull request`
+
+![ex1_draft_pr_1.png](images/ex1_draft_pr_1.png)
+
+- When Draft PR is ready, click `Ready for review` to convert the Draft PR into a normal Pull Request for final review and merging.
+
+![ex1_draft_pr_2.png](images/ex1_draft_pr_2.png)
+
 ### 3. Comment on teammate’s PR
 
 **Steps:**
@@ -102,7 +120,7 @@ Contributors
 ```
 ![ex1_review_pr_1.png](images/ex1_review_pr_1.png)
 
-**Note** 
+**Notes** 
 - `Add single comment` → add a comment immediately and notify the author
 - `Start a review` → allow you to add multiple comments and submit them together with action (Comment/Approve/Request changes)
 

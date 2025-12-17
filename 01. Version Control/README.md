@@ -93,6 +93,30 @@ time.
   made and why.
 * **Best Practice:** Commit early, commit often, and write meaningful commit messages.
 
+### HEAD
+
+**HEAD** in Git points to the current commit or branch you're working on, acting as a pointer to the tip of your active
+branch. It tells Git "where you are" in the repository, so commands like git commit or git log know which snapshot to
+reference or update
+
+**Normal HEAD**
+HEAD typically attaches to a branch, like main or develop, meaning it indirectly points to the latest commit on that
+branch.For example, running git status shows "on branch main," and new commits advance both the branch and HEAD
+together.
+
+**Detached HEAD**
+HEAD becomes "detached" when you check out a specific commit hash, tag, or remote branch directly, rather than a branch
+name. In this mode, HEAD points straight to that commit; any new commits risk being lost unless you create a branch to
+save them
+
+**Remote HEAD**
+When talking about HEAD in a Remote Repository (like on GitHub or origin), it serves a slightly different purpose. It
+represents the default branch of that repository, usually `main` or `master`.
+
+- The default branch determines the content you see automatically when accessing the repository
+- Only the owner of the repository and anyone has the valid permission can change the default branch
+- In your local repository, the remote HEAD is represented with the `origin` prefix
+
 ### Branching and Merging
 
 * **Branch:** A branch is a lightweight, movable pointer to a commit. It allows you to create an independent line of
@@ -105,8 +129,6 @@ time.
 * **Merge Conflict:** This happens when Git cannot automatically merge two changes because the *exact same lines* were
   modified differently in the two branches being combined. You must manually open the files and resolve the conflicts
   before completing the merge.
-
-***
 
 ## Basic Commands
 
@@ -128,8 +150,6 @@ These commands represent your most common daily Git workflow:
 | `git checkout -b <new-branch>`              | Creates a new branch and immediately switches to it.                                                        | Branching      |
 | `git checkout`                              | Switches branches or restore files.                                                                         | Branching      |
 | `git fetch --all`                           | Sync all branches and changes from remotes.                                                                 | Syncing        |
-
-***
 
 ## Collaboration and Open Source
 

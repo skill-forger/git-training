@@ -59,4 +59,5 @@
        git config user.name
        git config user.email
        ```
-    - Your terminal output should look similar to this: ![verify_config.png](images/verify_config.png)
+    - Your terminal output should look similar to this: \
+      ![verify_config.png](images/verify_config.png)

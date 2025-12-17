@@ -107,7 +107,37 @@ The three most popular are:
 
 ### 2. Adding a new SSH key to your GitHub account
 
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+#### Step 1: Copy Your Public SSH Key
+- First, locate and print your public key
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+Note: Your key name can changed depend on the key name in generate ssh key step
+- Copy the entire output, it begins with
+
+```
+ssh-rsa AAAA...
+```
+
+#### Step 2: Open GitHub SSH Settings
+
+- Go to: GitHub → Profile Picture → Settings → SSH and GPG keys 
+
+![add_ssh_key_1.png](images/add_ssh_key_1.png)
+
+#### Step 3: Add new SSH Key
+![add_ssh_key_2.png](images/add_ssh_key_2.png)
+
+![add_ssh_key_3.png](images/add_ssh_key_3.png)
+- **Title**: Any name that helps you recognize the device
+(e.g: MacBook Pro, Work Laptop, PC).
+
+- **Key**: Paste the content of your public key file in step 1
+
+Then click `Add SSH key`, confirm using your GitHub password if asked
+
+References: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 ## Cloning an existing repository
 

@@ -24,10 +24,12 @@ and unique tool and can entirely change the way that you develop
 
 ## Objectives
 
-- Understand Git branching concepts, including how branches represent independent lines of development and how history is tracked via commit references.
+- Understand Git branching concepts, including how branches represent independent lines of development and how history
+  is tracked via commit references.
 - Visualize and reason about parallel development and how branching keeps `main` stable.
 - List and inspect branches, including local and remote branches (`git branch`, `git branch -a`).
-- Create, switch, and rename branches (`git branch <name>`, `git checkout -b <name>`, `git checkout <name>`, `git branch -m <new_name>`).
+- Create, switch, and rename branches (`git branch <name>`, `git checkout -b <name>`, `git checkout <name>`,
+  `git branch -m <new_name>`).
 - Safely and forcefully delete branches (`git branch -d <name>`, `git branch -D <name>`).
 - Synchronize branch information from remotes (`git fetch --all`).
 - Merge branches and interpret outcomes, including merge commits and their parent relationships.
